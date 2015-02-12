@@ -1,0 +1,21 @@
+Name	Round_1	Round_2	Round 3	Round 4
+Root	Kelsey	Becca	Jade	Kaitlyn
+Peggy	Kelsey	Megan	Jillian	Ashley I
+Christine	Britt	Tandra	Jade	Whitney
+Leah	Britt	Megan	Kelsey	Jordan
+Goldman	Jade	Ashley I	Kelsey	Becca
+Annie	Whitney	Ashley I	Britt	Kaitlyn
+Devin	Becca	Whitney	Britt	Ashley I
+Deri	Becca	Kaitlyn	Tracy	Trina
+Courtney	Ashley S	Jillian	Tara	Mackenzie
+Nancy	Jade	Kaitlyn	Ashley I	Becca
+Savello	Megan	Juelia	Becca	Tandra
+Marie	Ashley I	Kelsey	Kaitlyn	Whitney
+Kate	Kaitlyn	Whitney	Jillian	Britt
+Stacey	Tandra	Becca	Tracy	Britt
+Megan	Alissa	Kelsey	Kaitlyn	Jade
+Amanda	Tandra	Jade	Nikki	Tracy
+Stef	Kaitlyn	Britt	Jordan	Kelsey
+Meggie	Whitney	Britt	Ashley I	Tracy
+Sarah	Carly	Jade	Whitney	Kelsey
+Jenna	Nikki	Amber	Tandra	Jade
