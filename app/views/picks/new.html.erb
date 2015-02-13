@@ -1,0 +1,25 @@
+<%= form_for :picks do |f| %>
+  <p>
+    <%= f.label :player %><br>
+    <%= f.text_field :player %>
+  </p>
+ 
+  <p>
+    <%= f.label :week %><br>
+    <%= f.text_field :week %>
+  </p>
+
+  <p>
+    <%= f.label :rose %><br>
+    <%= f.text_field :rose %>
+  </p>
+
+  <p>
+    <%= f.label :tears %><br>
+    <%= f.text_field :tears %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>
