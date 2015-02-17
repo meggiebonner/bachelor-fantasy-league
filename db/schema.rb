@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150217075929) do
+ActiveRecord::Schema.define(version: 20150217203741) do
 
   create_table "bachelorettes", force: :cascade do |t|
     t.string   "name"
@@ -24,6 +24,22 @@ ActiveRecord::Schema.define(version: 20150217075929) do
     t.string   "week"
     t.string   "rose"
     t.string   "tears"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "scores", force: :cascade do |t|
+    t.string   "player"
+    t.integer  "total"
+    t.integer  "week_2"
+    t.integer  "week_3"
+    t.integer  "week_4"
+    t.integer  "week_5"
+    t.integer  "week_6"
+    t.integer  "week_7"
+    t.integer  "week_8"
+    t.integer  "week_9"
+    t.integer  "week_10"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player: MyString
+  total: 1
+  week_2: 1
+  week_3: 1
+  week_4: 1
+  week_5: 1
+  week_6: 1
+  week_7: 1
+  week_8: 1
+  week_9: 1
+  week_10: 1
+
+two:
+  player: MyString
+  total: 1
+  week_2: 1
+  week_3: 1
+  week_4: 1
+  week_5: 1
+  week_6: 1
+  week_7: 1
+  week_8: 1
+  week_9: 1
+  week_10: 1
