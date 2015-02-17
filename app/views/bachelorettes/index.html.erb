@@ -1,0 +1,15 @@
+<h1>Listing Bachelorettes</h1>
+ 
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>   
+  </tr>
+ 
+  <% @bachelorettes.each do |bachelorette| %>
+    <tr>
+      <td><%= bachelorette.id %></td>
+      <td><%= bachelorette.name %></td>
+    </tr>
+  <% end %>
+</table>
