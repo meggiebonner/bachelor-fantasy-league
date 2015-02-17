@@ -1,0 +1,19 @@
+<h1>Listing Picks</h1>
+ 
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Week</th>
+    <th>Rose</th>
+    <th>Tears</th>    
+  </tr>
+ 
+  <% @picks.each do |pick| %>
+    <tr>
+      <td><%= pick.player %></td>
+      <td><%= pick.week %></td>
+      <td><%= pick.rose %></td>
+      <td><%= pick.tears %></td>
+    </tr>
+  <% end %>
+</table>
