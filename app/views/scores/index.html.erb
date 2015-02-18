@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Player</th>
+    <th>Player_Id</th>
     <th>Total</th>   
     <th>Week_2</th>   
     <th>Week_3</th>   
@@ -18,6 +19,7 @@
   <% @scores.each do |score| %>
     <tr>
       <td><%= score.player %></td>
+      <td><%= score.player_id %></td>
       <td><%= score.total %></td>
       <td><%= score.week_2 %></td>
       <td><%= score.week_3 %></td>
