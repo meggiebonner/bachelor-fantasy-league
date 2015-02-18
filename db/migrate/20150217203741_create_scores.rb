@@ -2,6 +2,7 @@ class CreateScores < ActiveRecord::Migration
   def change
     create_table :scores do |t|
       t.string :player
+      t.integer :player_id
       t.integer :total
       t.integer :week_2
       t.integer :week_3

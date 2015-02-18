@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20150217203741) do
 
   create_table "scores", force: :cascade do |t|
     t.string   "player"
+    t.integer  "player_id"
     t.integer  "total"
     t.integer  "week_2"
     t.integer  "week_3"
