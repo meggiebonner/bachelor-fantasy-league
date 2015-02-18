@@ -132,7 +132,7 @@ bachelorette_id int,
 rose tinyint(1));
 
 
-drop table if exists scoring;
+drop table if exists scores;
 create table scoring(
 player_id int,
 total_score int,
