@@ -1,25 +1,23 @@
-<h1>Listing Scores</h1>
+<h1>Scores</h1>
  
 <table>
   <tr>
-    <th>Player_Name</th>
-    <th>Player_Id</th>
+    <th>Name</th>
     <th>Total</th>   
-    <th>Week_2</th>   
-    <th>Week_3</th>   
-    <th>Week_4</th>   
-    <th>Week_5</th>   
-    <th>Week_6</th>   
-    <th>Week_7</th>   
-    <th>Week_8</th>   
-    <th>Week_9</th>   
-    <th>Week_10</th>   
+    <th>Week2</th>   
+    <th>Week3</th>   
+    <th>Week4</th>   
+    <th>Week5</th>   
+    <th>Week6</th>   
+    <th>Week7</th>   
+    <th>Week8</th>   
+    <th>Week9</th>   
+    <th>Week10</th>   
   </tr>
  
   <% @scores.each do |score| %>
     <tr>
       <td><%= score.player_name %></td>
-      <td><%= score.player_id %></td>
       <td><%= score.total %></td>
       <td><%= score.week_2 %></td>
       <td><%= score.week_3 %></td>
@@ -33,3 +31,5 @@
     </tr>
   <% end %>
 </table>
+
+<%= link_to 'Back', controller: 'welcome' %>

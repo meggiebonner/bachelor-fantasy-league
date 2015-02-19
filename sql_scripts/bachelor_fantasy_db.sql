@@ -8,7 +8,7 @@ create table bachelorette(
 id int not null primary key auto_increment,
 name varchar(20));
 
-load data local infile '/Users/meggie.bonner/Documents/bachelor-fantasy-league/bachelorettes.txt'
+load data local infile '/var/lib/openshift/54e2d1c84382ecc3f3000175/app-root/data/bachelorettes.txt'
 into table bachelorette
 ignore 1 lines
 (name);
@@ -18,7 +18,7 @@ create table player(
 id int not null primary key auto_increment,
 name varchar(20));
 
-load data local infile '/Users/meggie.bonner/Documents/bachelor-fantasy-league/players.txt'
+load data local infile '/var/lib/openshift/54e2d1c84382ecc3f3000175/app-root/data/players.txt'
 into table player
 ignore 1 lines
 (name);
@@ -46,7 +46,7 @@ create table final_pick_staging(
 player_name varchar(20),
 bachelorette_name varchar(20));
 
-load data local infile '/Users/meggie.bonner/Documents/bachelor-fantasy-league/final_pick.txt'
+load data local infile '/var/lib/openshift/54e2d1c84382ecc3f3000175/app-root/data/final_pick.txt'
 into table final_pick_staging
 ignore 1 lines;
 
@@ -72,7 +72,7 @@ round_2_pick varchar(20),
 round_3_pick varchar(20),
 round_4_pick varchar(20));
 
-load data local infile '/Users/meggie.bonner/Documents/bachelor-fantasy-league/draft.txt'
+load data local infile '/var/lib/openshift/54e2d1c84382ecc3f3000175/app-root/data/draft.txt'
 into table draft_staging
 ignore 1 lines;
 

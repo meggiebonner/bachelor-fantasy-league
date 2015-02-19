@@ -1,5 +1,5 @@
 class PicksController < ApplicationController
-  http_basic_authenticate_with name: "bachelor", password: "password", except: [:index, :show]
+  http_basic_authenticate_with name: "bachelor", password: "2015season19", except: [:index, :show]
  
   def index
     @picks = Pick.all
