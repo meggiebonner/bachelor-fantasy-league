@@ -1,22 +1,22 @@
 <%= form_for :pick, url: picks_path do |f| %>
   <p>
     <%= f.label "Your Name" %><br>
-    <%= f.text_field :player %>
-  </p>
- 
-  <p>
-    <%= f.label :week %><br>
-    <%= f.text_field :week %>
+    <%= f.select :player, [['Root','Root'],['Peggy','Peggy'],['Christine','Christine'],['Leah','Leah'],['Goldman','Goldman'],['Annie','Annie'],['Devin','Devin'],['Deri','Deri'],['Courtney','Courtney'],['Nancy','Nancy'],['Savello','Savello'],['Marie','Marie'],['Katie','Kate'],['Stacey','Stacey'],['Megan','Megan'],['Amanda','Amanda'],['Stef','Stef'],['Meggie','Meggie'],['Sarah','Sarah'],['Jenna','Jenna']] %>
   </p>
 
   <p>
-    <%= f.label :rose %><br>
-    <%= f.text_field :rose %>
+    <%= f.label "Week" %><br>
+    <%= f.select :week, [['10','10']] %>
+  </p>  
+
+  <p>
+    <%= f.label "Winner" %><br>
+    <%= f.select :rose, [['Becca','Becca'],['Whitney','Whitney']] %>
   </p>
 
   <p>
-    <%= f.label :tears %><br>
-    <%= f.text_field :tears %>
+    <%= f.label "Loser" %><br>
+    <%= f.select :tears, [['Becca','Becca'],['Whitney','Whitney']] %>
   </p>
  
   <p>
