@@ -12,7 +12,8 @@
     <th>Week7</th>   
     <th>Week8</th>   
     <th>Week9</th>   
-    <th>Week10</th>   
+    <th>Week10</th> 
+    <th>CorrectFinalPick</th>     
   </tr>
  
   <% @scores.each do |score| %>
@@ -28,6 +29,7 @@
       <td><%= score.week_8 %></td>
       <td><%= score.week_9 %></td>
       <td><%= score.week_10 %></td>
+      <td><%= score.correct_final_pick %></td>
     </tr>
   <% end %>
 </table>
