@@ -1,5 +1,5 @@
 class SignupsController < ApplicationController
-  http_basic_authenticate_with name: "bachelor", password: "2015season11", except: [:index, :show]
+#  http_basic_authenticate_with name: "bachelor", password: "2015season11", except: [:index, :show]
  
   def index
     @signups = Signup.all
