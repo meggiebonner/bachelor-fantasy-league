@@ -1,0 +1,16 @@
+<%= form_for :signup do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+ 
+  <p>
+    <%= f.label "Bachelorette" %><br>
+    <%= f.select :bachelorette, [['Kaitlyn','Kaitlyn'],['Britt','Britt']] %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,17 @@
+<h1>Signups</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Bachelorette</th>   
+  </tr>
+ 
+  <% @signups.each do |signup| %>
+    <tr>
+      <td><%= signup.name %></td>
+      <td><%= signup.bachelorette %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Back', controller: 'welcome' %>
