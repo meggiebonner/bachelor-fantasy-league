@@ -1,0 +1,19 @@
+<h1>Drafts</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Round</th>
+    <th>Bachelor</th>
+  </tr>
+ 
+  <% @drafts.each do |draft| %>
+    <tr>
+      <td><%= draft.player %></td>
+      <td><%= draft.round %></td>
+      <td><%= draft.bachelor %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Back', controller: 'welcome' %>

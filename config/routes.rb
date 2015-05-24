@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :signups
 
+  resources :drafts
+
 
   root 'welcome#index'
 

@@ -1,0 +1,20 @@
+<%= form_for :draft, url: drafts_path do |f| %>
+  <p>
+    <%= f.label "Your Name" %><br>
+    <%= f.select :player, [['Meggie','Meggie'],['Dereth','Dereth'],['Katie Brogan Ozeck','Katie Brogan Ozeck'],['Marie','Marie'],['Lauren Goldman','Lauren Goldman'],['Christine','Christine'],['Sam','Sam'],['Brian Goldman','Brian Goldman'],['Stacey','Stacey'],['Leigh','Leigh'],['Annie','Annie'],['Jillian','Jillian'],['Andy','Andy'],['Devin','Devin'],['Sarah','Sarah'],['Marisa','Marisa'],['Andersen','Andersen'],['Kayt','Kayt'],['Megan','Megan'],['Peggy','Peggy']] %>
+  </p>
+
+  <p>
+    <%= f.label "Round" %><br>
+    <%= f.select :round, [['1', '1'],['2','2'],['3','3'],['4','4'],['Winner Pick','5']] %>
+  </p>  
+
+  <p>
+    <%= f.label "Bachelor" %><br>
+    <%= f.select :bachelor, [['Shawn B.','Shawn B.'],['Chris','Chris'],['Ben H.','Ben H.'],['J.J','J.J'],['Joe','Joe'],['Kupah','Kupah'],['Daniel','Daniel'],['Ryan B.','Ryan B.'],['Joshua','Joshua'],['Tony','Tony'],['Clint','Clint'],['Corey (NY)','Corey (NY)'],['Jonathan','Jonathan'],['Cory (NC)','Cory (NC)'], ['Ben Z.','Ben Z.'],['Tanner','Tanner'],['Ian','Ian'],['Justin','Justin'],['Jared','Jared']] %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>

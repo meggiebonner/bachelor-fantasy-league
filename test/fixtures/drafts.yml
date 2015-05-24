@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player: MyString
+  round: 1
+  bachelor: MyString
+
+two:
+  player: MyString
+  round: 1
+  bachelor: MyString
