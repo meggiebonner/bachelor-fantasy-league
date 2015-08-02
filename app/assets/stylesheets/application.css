@@ -13,4 +13,19 @@
  *= require_tree .
  *= require_self
  */
-*= require twitter/bootstrap
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+  background: #ddd;
+}
+
+td, th {
+  padding: 0.4em 0.5em;
+}
