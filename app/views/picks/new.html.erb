@@ -1,9 +1,6 @@
 <%= form_for :pick, url: picks_path do |f| %>
-
-  <p>
-    <%= f.label "Week" %><br>
-    <%= f.select :week, [['10','10']] %>
-  </p>  
+  
+  <%= f.hidden_field :player, :value => @current_user.username %> 
 
   <p>
     <%= f.label "Rose" %><br>
