@@ -1,6 +1,11 @@
+<h2 class='User_Header'><%=@current_user.username%> Setting <h2>
+
 <%= form_for :pick, url: picks_path do |f| %>
   
   <%= f.hidden_field :player, :value => @current_user.username %> 
+
+  <%= f.hidden_field :week, :value => '10' %> 
+
 
   <p>
     <%= f.label "Rose" %><br>
