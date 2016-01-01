@@ -13,7 +13,7 @@ class SignupsController < ApplicationController
   end
 
   def create
-    @signup = Signup.new(params.require(:signup).permit(:name, :bachelorette)) 
+    @signup = Signup.new(params.require(:signup).permit(:name, :email, :login, :password)) 
     @signup.save
     redirect_to @signup  
   end
