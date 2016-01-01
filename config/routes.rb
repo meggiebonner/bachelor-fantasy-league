@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
  
+  match ':controller(/:action(/:id))(.:format)', :via => [:get]
+  root 'welcome#index'
+  match "signup", :to => "users#new" , :via => [:get]
+  match "login", :to => "sessions#login", :via => [:get]
+  match "logout", :to => "sessions#logout", :via => [:get]
+  match "home", :to => "sessions#home", :via => [:get]
+  match "profile", :to => "sessions#profile", :via => [:get]
+  match "setting", :to => "sessions#setting", :via => [:get]
+
   resources :picks
  
   resources :bachelorettes
@@ -10,8 +19,8 @@ Rails.application.routes.draw do
 
   resources :drafts
 
+  resources :users
 
-  root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

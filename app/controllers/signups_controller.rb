@@ -1,5 +1,4 @@
 class SignupsController < ApplicationController
-#  http_basic_authenticate_with name: "bachelor", password: "2015season11", except: [:index, :show]
  
   def index
     @signups = Signup.all
@@ -10,10 +9,11 @@ class SignupsController < ApplicationController
   end
 
   def new
+
   end
 
   def create
-    @signup = Signup.new(params.require(:signup).permit(:name, :email, :login, :password)) 
+    @signup = Signup.new(params.require(:signup).permit(:name, :email, :username, :password)) 
     @signup.save
     redirect_to @signup  
   end
