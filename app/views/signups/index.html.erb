@@ -3,13 +3,17 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Bachelorette</th>   
+    <th>Email</th>   
+    <th>Login</th>   
+    <th>Paid?</th>   
   </tr>
  
   <% @signups.each do |signup| %>
     <tr>
       <td><%= signup.name %></td>
-      <td><%= signup.bachelorette %></td>
+      <td><%= signup.email %></td>
+      <td><%= signup.login %></td>
+      <td><%= signup.paid %></td>
     </tr>
   <% end %>
 </table>
