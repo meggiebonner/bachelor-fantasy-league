@@ -31,9 +31,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # add mysql2
 gem 'mysql2'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
+gem 'bcrypt-ruby', :require => 'bcrypt' 
 # Use Unicorn as the app server
 # gem 'unicorn'
 
