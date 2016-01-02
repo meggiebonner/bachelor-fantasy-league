@@ -18,12 +18,9 @@
 	color:#000000;
 	font-family:"abc-modern", sans-serif;
 	font-size:55px;
-	padding-bottom: 10px;
 	font-weight:900;
 	font-stretch:ultra-expanded;
-	background-color: #fff;
 }
-
 body {
   font-family: Verdana, sans-serif;
   color:#40332D;
@@ -36,7 +33,7 @@ body {
 	margin: 0 0 3em 0;
 	padding: 0;
 	list-style: none;
-	background-color: #fff;
+    background-color: #fff;
 	border-bottom: 1px solid #ccc; 
 	border-top: 1px solid #ccc; 
 }

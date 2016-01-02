@@ -1,21 +1,17 @@
-<h1>Signups</h1>
+<h3>Signups</h3>
  
 <table>
   <tr>
-    <th>Name</th>
+    <th>Username</th>
     <th>Email</th>   
-    <th>Login</th>   
     <th>Paid?</th>   
   </tr>
  
-  <% @signups.each do |signup| %>
+  <% @users.each do |user| %>
     <tr>
-      <td><%= signup.name %></td>
-      <td><%= signup.email %></td>
-      <td><%= signup.login %></td>
-      <td><%= signup.paid %></td>
+      <td><%= user.username %></td>
+      <td><%= user.email %></td>
+      <td><%= user.paid %></td>
     </tr>
   <% end %>
 </table>
-
-<%= link_to 'Back', controller: 'welcome' %>

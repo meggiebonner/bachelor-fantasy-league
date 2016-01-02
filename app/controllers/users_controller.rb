@@ -1,4 +1,12 @@
 class UsersController < ApplicationController  
+  def index
+    @users = Draft.all
+  end
+
+  def show
+    @users = Draft.find(params[:id])
+  end
+
   def new
     @user = User.new 
   end

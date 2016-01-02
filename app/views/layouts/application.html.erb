@@ -13,10 +13,12 @@
 <div id = "nav">
 <li><%= link_to 'Home', controller: 'welcome' %></li>
 <li><%= link_to 'Sign Up for the New Season', "signup" %></li>
-<li><%= link_to 'New Weekly Pick', new_pick_path %></li>
-<li><%= link_to 'View Draft', "viewdraft" %></li>
+<li><%= link_to 'View Players', "users" %></li>
+<% if @current_user.nil? %>
 <li><%= link_to 'Log In', "login" %></li>
+<% else %>
 <li><%= link_to 'Log Out', "logout" %></li>
+<% end %>
 </div>
 
 <%= yield %>
