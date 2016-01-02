@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   match "profile", :to => "sessions#profile", :via => [:get]
   match "setting", :to => "sessions#setting", :via => [:get]
 
+  match "viewdraft", :to => "drafts#show", :via => [:get]
+
+
   resources :picks
  
   resources :bachelorettes

@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BachelorFantasyLeague</title>
+  <title>The Bachelor Fantasy League</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+<div id = "logo">
+<%= image_tag "The_Bachelor_usa_logo.png" %> FANTASY LEAGUE
+</div>
 </head>
 <body>
+<div id = "nav">
+<li><%= link_to 'Home', controller: 'welcome' %></li>
+<li><%= link_to 'Sign Up for the New Season', "signup" %></li>
+<li><%= link_to 'New Weekly Pick', new_pick_path %></li>
+<li><%= link_to 'View Draft', "viewdraft" %></li>
+<li><%= link_to 'Log In', "login" %></li>
+<li><%= link_to 'Log Out', "logout" %></li>
+</div>
 
 <%= yield %>
 
