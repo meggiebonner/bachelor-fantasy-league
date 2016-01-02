@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   match ':controller(/:action(/:id))(.:format)', :via => [:get]
   root 'welcome#index'
   match "signup", :to => "users#new" , :via => [:get]
-  match "users", :to => "users#show" , :via => [:get]
+  match "users", :to => "users#index" , :via => [:get]
   match "login", :to => "sessions#login", :via => [:get]
   match "logout", :to => "sessions#logout", :via => [:get]
   match "login_attempt", :to => "sessions#login_attempt", :via => [:post]
