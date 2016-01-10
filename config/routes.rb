@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
  
+  resources :picks
+ 
+  resources :scores
+
+  resources :drafts
+
+  resources :users
+
   match ':controller(/:action(/:id))(.:format)', :via => [:get]
   root 'welcome#index'
   match "signup", :to => "users#new" , :via => [:get]
@@ -9,16 +17,6 @@ Rails.application.routes.draw do
   match "home", :to => "sessions#home", :via => [:get]
   match "profile", :to => "sessions#profile", :via => [:get]
   match "setting", :to => "sessions#setting", :via => [:get]
-
-  resources :picks
- 
-  resources :bachelorettes
-
-  resources :scores
-
-  resources :drafts
-
-  resources :users
 
 
   # The priority is based upon order of creation: first created -> highest priority.

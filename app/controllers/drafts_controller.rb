@@ -1,6 +1,5 @@
 class DraftsController < ApplicationController
-  before_filter :authenticate_user, :except => [:index, :login, :login_attempt, :logout]
-  before_filter :save_login_state, :only => [:index, :login, :login_attempt]
+   before_filter :authenticate_user, :except => [:index, :login, :login_attempt, :logout]
 
   def index
     @drafts = Draft.all
