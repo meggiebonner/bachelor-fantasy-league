@@ -1,0 +1,22 @@
+<h2 class='User_Header'>Admin Draft Pick <h2>
+
+
+<%= form_for :draft, url: drafts_path do |f| %>
+
+  <p> Username:</br> <%= f.text_field :player%> </p>
+
+
+  <p>
+    <%= f.label "Round" %><br>
+    <%= f.select :round, [['1', '1'],['2','2'],['3','3'],['4','4'],['Winner Pick','5']] %>
+  </p>  
+
+  <p>
+    <%= f.label "Bachelorette" %><br>
+    <%= f.select :bachelor, [['Olivia','Olivia'],['Lauren B.','Lauren B.'],['LB','LB'],['Caila', 'Caila'],['Amber','Amber'],['Jami','Jami'],['Jennifer','Jennifer'],['Jubilee','Jubilee'],['Amanda','Amanda'],['JoJo','JoJo'],['Leah','Leah'],['Rachel','Rachel'],['Samantha','Samantha'],['Jackie','Jackie'], ['Haley','Haley'],['Emily','Emily'],['Shushanna','Shushanna'],['Lauren H.','Lauren H.'],['Becca','Becca'],['Mandi', 'Mandi'],['Lace','Lace']] %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>

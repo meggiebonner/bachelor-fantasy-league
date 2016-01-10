@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   match "home", :to => "sessions#home", :via => [:get]
   match "profile", :to => "sessions#profile", :via => [:get]
   match "setting", :to => "sessions#setting", :via => [:get]
+  match "admin", :to => "drafts#admin" , :via => [:get]
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
