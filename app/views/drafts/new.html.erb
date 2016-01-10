@@ -1,4 +1,10 @@
+<h2 class='User_Header'><%=@current_user.username%> Draft Pick <h2>
+
+
 <%= form_for :draft, url: drafts_path do |f| %>
+
+  <%= f.hidden_field :player, :value => @current_user.username %> 
+
 
   <p>
     <%= f.label "Round" %><br>
@@ -7,7 +13,7 @@
 
   <p>
     <%= f.label "Bachelorette" %><br>
-    <%= f.select :bachelor, [['Shawn B.','Shawn B.'],['Chris','Chris'],['Ben H.','Ben H.'],['J.J','J.J'],['Joe','Joe'],['Kupah','Kupah'],['Daniel','Daniel'],['Ryan B.','Ryan B.'],['Joshua','Joshua'],['Tony','Tony'],['Clint','Clint'],['Corey (NY)','Corey (NY)'],['Jonathan','Jonathan'],['Cory (NC)','Cory (NC)'], ['Ben Z.','Ben Z.'],['Tanner','Tanner'],['Ian','Ian'],['Justin','Justin'],['Jared','Jared']] %>
+    <%= f.select :bachelor, [['Olivia','Olivia'],['Lauren B.','Lauren B.'],['LB','LB'],['Caila', 'Caila'],['Amber','Amber'],['Jami','Jami'],['Jennifer','Jennifer'],['Jubilee','Jubilee'],['Amanda','Amanda'],['JoJo','JoJo'],['Leah','Leah'],['Rachel','Rachel'],['Samantha','Samantha'],['Jackie','Jackie'], ['Haley','Haley'],['Emily','Emily'],['Shushanna','Shushanna'],['Lauren H.','Lauren H.'],['Becca','Becca'],['Mandi', 'Mandi'],['Lace','Lace']] %>
   </p>
  
   <p>

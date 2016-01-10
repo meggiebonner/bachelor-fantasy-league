@@ -1,20 +1,20 @@
-<h2 class='User_Header'><%=@current_user.username%> Setting <h2>
+<h2 class='User_Header'><%=@current_user.username%> Pick <h2>
 
 <%= form_for :pick, url: picks_path do |f| %>
   
   <%= f.hidden_field :player, :value => @current_user.username %> 
 
-  <%= f.hidden_field :week, :value => '10' %> 
+  <%= f.hidden_field :week, :value => '2' %> 
 
 
   <p>
     <%= f.label "Rose" %><br>
-    <%= f.select :rose, [['Shawn B.','Shawn B.'],['Nick','Nick']] %>
+    <%= f.select :rose, [['Olivia','Olivia'],['Lauren B.','Lauren B.'],['LB','LB'],['Caila', 'Caila'],['Amber','Amber'],['Jami','Jami'],['Jennifer','Jennifer'],['Jubilee','Jubilee'],['Amanda','Amanda'],['JoJo','JoJo'],['Leah','Leah'],['Rachel','Rachel'],['Samantha','Samantha'],['Jackie','Jackie'], ['Haley','Haley'],['Emily','Emily'],['Shushanna','Shushanna'],['Lauren H.','Lauren H.'],['Becca','Becca'],['Mandi', 'Mandi'],['Lace','Lace']]  %>
   </p>
 
   <p>
     <%= f.label "Tears" %><br>
-    <%= f.select :tears, [['Shawn B.','Shawn B.'],['Nick','Nick']] %>
+    <%= f.select :tears, [['Olivia','Olivia'],['Lauren B.','Lauren B.'],['LB','LB'],['Caila', 'Caila'],['Amber','Amber'],['Jami','Jami'],['Jennifer','Jennifer'],['Jubilee','Jubilee'],['Amanda','Amanda'],['JoJo','JoJo'],['Leah','Leah'],['Rachel','Rachel'],['Samantha','Samantha'],['Jackie','Jackie'], ['Haley','Haley'],['Emily','Emily'],['Shushanna','Shushanna'],['Lauren H.','Lauren H.'],['Becca','Becca'],['Mandi', 'Mandi'],['Lace','Lace']]  %>
   </p>
  
   <p>
