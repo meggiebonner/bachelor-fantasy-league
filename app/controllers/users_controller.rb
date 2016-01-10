@@ -1,10 +1,10 @@
 class UsersController < ApplicationController  
   def index
-    @users = Draft.all
+    @users = User.all
   end
 
   def show
-    @users = Draft.find(params[:id])
+    @users = User.find(params[:id])
   end
 
   def new
