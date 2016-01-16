@@ -12,10 +12,9 @@
 <body>
 <div id = "nav">
 <li><%= link_to 'Home', controller: 'welcome' %></li>
-<li><%= link_to 'New Draft Pick', new_draft_path %></li>
-<li><%= link_to 'View Draft Picks', controller: 'drafts' %></li>
 <li><%= link_to 'New Weekly Pick', new_pick_path %></li>
-<li><%= link_to 'Admin Draft Pick', "admin" %></li>
+<li><%= link_to 'View Draft Picks', controller: 'drafts' %></li>
+<li><%= link_to 'View Scores', controller: 'scores' %></li>
 
 
 <% if @current_user.nil? %>
