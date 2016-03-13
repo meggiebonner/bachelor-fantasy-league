@@ -14,7 +14,7 @@ class PicksController < ApplicationController
   end
 
   def create
-    @pick = Pick.new(params.require(:pick).permit(:player, :week, :rose, :tears)) 
+    @pick = Pick.new(params.require(:pick).permit(:player, :week, :rose, :tears, :bachelorette)) 
     @pick.save
     redirect_to @pick  
   end

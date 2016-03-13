@@ -5,7 +5,8 @@
     <th>Name</th>
     <th>Week</th>
     <th>Rose</th>
-    <th>Tears</th>    
+    <th>Tears</th> 
+    <th>Bachelorette</th>    
   </tr>
  
   <% @picks.each do |pick| %>
@@ -14,6 +15,7 @@
       <td><%= pick.week %></td>
       <td><%= pick.rose %></td>
       <td><%= pick.tears %></td>
+      <td><%= pick.bachelorette %></td>
     </tr>
   <% end %>
 </table>
