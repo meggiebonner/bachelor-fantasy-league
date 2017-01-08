@@ -4,23 +4,23 @@
   
   <%= f.hidden_field :player, :value => @current_user.username %> 
 
-  <%= f.hidden_field :week, :value => '10' %> 
+  <%= f.hidden_field :week, :value => '2' %> 
 
 
   <p>
     <%= f.label "Rose" %><br>
-    <%= f.select :rose, [['Jordan'],['Robby']]  %>
+    <%= f.select :rose, [['Rachel'],['Vanessa'],['Danielle L.'],['Christen'],['Astrid'],['Corinne'],['Elizabeth'],['Jasmine G.'],['Raven'],['Kristina'],['Danielle M.'],['Sarah'],['Josephine'],['Lacey'],['Taylor'],['Alexis'],['Hailey'],['Whitney'],['Dominique'],['Jaimi'],['Brittany'],['Liz']]  %>
   </p>
 
   <p>
     <%= f.label "Tears" %><br>
-    <%= f.select :tears, [['Jordan'],['Robby']]   %>
+    <%= f.select :tears, [['Rachel'],['Vanessa'],['Danielle L.'],['Christen'],['Astrid'],['Corinne'],['Elizabeth'],['Jasmine G.'],['Raven'],['Kristina'],['Danielle M.'],['Sarah'],['Josephine'],['Lacey'],['Taylor'],['Alexis'],['Hailey'],['Whitney'],['Dominique'],['Jaimi'],['Brittany'],['Liz']]  %>
   </p>
-
+<!-- 
   <p>
     <%= f.label "Next Bachelor" %><br>
     <%= f.select :bachelorette, [['Jordan'],['Luke'],['Wells'],['James T.'],['Grant'],['Derek'],['Christian'],['Chad'],['Chase'],['Alex'],['Robby'],['Brandon'],['James F.'],['Ali'],['Nick B.'],['Will'],['James S.'],['Vinny'],['Evan'],['Daniel']]  %>
-  </p>
+  </p> -->
 
   <p>
     <%= f.submit "Save" %>
