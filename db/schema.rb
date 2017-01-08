@@ -53,18 +53,12 @@ ActiveRecord::Schema.define(version: 20160101004607) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "signups", force: :cascade do |t|
-    t.string   "name"
-    t.string   "bachelorette"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "username"
     t.string   "email"
     t.string   "encrypted_password"
     t.string   "salt"
+    t.string   "paid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
