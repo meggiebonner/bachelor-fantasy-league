@@ -4,17 +4,17 @@
   
   <%= f.hidden_field :player, :value => @current_user.username %> 
 
-  <%= f.hidden_field :week, :value => '10' %> 
+  <%= f.hidden_field :week, :value => '11' %> 
 
 
   <p>
     <%= f.label "Rose" %><br>
-    <%= f.select :rose, [['Rachel'],['Vanessa'],['Raven']]  %>
+    <%= f.select :rose, [['Vanessa'],['Raven'],['Nick picks neither woman']]  %>
   </p>
 
   <p>
     <%= f.label "Tears" %><br>
-    <%= f.select :tears, [['Rachel'],['Vanessa'],['Raven']] %>
+    <%= f.select :tears, [['Vanessa'],['Raven']] %>
   </p>
 <!-- 
   <p>
